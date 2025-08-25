@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lena Fotografia</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fffdfc;
+            color: #444;
+        }
+        header {
+            background: linear-gradient(135deg, #fcdce5, #fdeee7);
+            padding: 15px 11px;
+            text-align: Left;
+            display: flex;
+            align-items: center;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+        }
+        .logo {
+            width: 70px;
+            height: auto;
+            margin-right: 15px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+            color: #333;
+        }
+        header p {
+            font-size: 15px;
+            color: #555;
+            margin: 0;
+        }
+        nav {
+            background: #f8cdda;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #b23b64;
+        }
+        section {
+            padding: 42px 10px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: px;
+            color: #b23b64;
+            margin-bottom: 15px;
+        }
+        .portfolio img {
+            width: 280px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .portfolio img:hover {
+            transform: scale(1.05);
+        }
+        .blog-post {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fdeee7;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+        .blog-post h3 {
+            margin-top: 0;
+            color: #b23b64;
+        }
+        .blog-post p {
+            line-height: 1.7;
+        }
+        footer {
+            background: #f8cdda;
+            color: #333;
+            padding: 12px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
+        .contact-info {
+            flex: 1;
+            padding-left: 20px;
+        }
+        .footer-image {
+            width: 80px;
+            height: auto;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        a {
+            color: #b23b64;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            position: relative;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="Logo Lena Fotografia.jpg" alt="Logo Lena Fotografia" class="logo">
+            <div>
+                <h1>Lena Fotografia</h1>
+                <p>Zatrzymuję emocje w kadrach ✨</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#home">Start</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">O mnie</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+
+    <section id="home">
+        <h2>Robie Zajebiste Zdjęcia!</h2>
+        <p>Fotografia to moja pasja – uwielbiam naturalne światło, szczere emocje i chwile, które warto zapamiętać 💕</p>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Moje prace</h2>
+        <p>Tu znajdziesz kilka moich ulubionych zdjęć 📷</p>
+        <img src="2e8b80200bae4346448bcc4361bf6be8 (1).jpg" alt="Przykładowe zdjęcie 1">
+        <img src="0b7236d3279f140946f5936012db9331 (1).jpg" alt="Przykładowe zdjęcie 2">
+        <img src="0d8bb06c2ba16050ace0948f412c575f (1).jpg" alt="Przykładowe zdjęcie 3">
+    </section>
+
+    <section id="about">
+        <h2>O mnie</h2>
+        <p>Jestem Lena Fotel🌸. Fotografia to dla mnie coś więcej niż zdjęcia – to sztuka zatrzymywania chwil, które znikają szybciej, niż zdążymy je dostrzec. W każdym spojrzeniu i uśmiechu widzę historię wartą zapamiętania którą mogę zapisać na zawsze.</p> 
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <div class="blog-post">
+            <h3>Dlaczego fotografia? 📸✨</h3>
+            <p>Każdy z nas ma sposób na zatrzymywanie chwil. Jedni zapisują je w pamiętniku, inni w głowie… a ja postanowiłam zatrzymywać je w kadrach. Fotografia od zawsze była dla mnie czymś więcej niż tylko naciśnięciem spustu migawki – to opowieść o emocjach, światłach i spojrzeniach.</p>
+        </div>
+
+        <div class="blog-post">
+            <h3>Moje pierwsze kroki z aparatem 🌸</h3>
+            <p>Początki były pełne eksperymentów, prób i błędów. Każde zdjęcie uczyło mnie czegoś nowego – jak złapać światło, jak uchwycić szczery uśmiech i jak zatrzymać chwilę, zanim ucieknie.</p>
+        </div>
+
+        <div class="blog-post">
+            <h3>Magia naturalnego światła ☀️</h3>
+            <p>Najpiękniejsze kadry powstają wtedy, kiedy korzystam z naturalnego światła – o wschodzie, zachodzie słońca albo w pochmurny dzień. To ono tworzy klimat, który sprawia, że zdjęcia stają się wyjątkowe.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact-info">
+            <section id="contact">
+                <h2>Kontakt</h2>
+                <p>📧 Email: <a href="mailto:Lena.fotografia@interia.pl">Lena.fotografia@interia.pl</a></p>
+                <p>📱 Tel: 733 881 222</p>
+                <p>📷 Instagram: <a href="https://www.instagram.com/Lena._.fotografia" target="blank">@Lena..fotografia</a></p>
+                <p> Cennik: <a href="https://www.b0zrzx.webwave.dev/lista-cen" target="blank">Lessna Pakiety sesji</a></p>
+            </section>
+        </div>
+        <img src="Diament.png" alt="Diament" class="footer-image" id="diamond-image">
+    </footer>
+    <p style="text-align: center;">© 2025 Lena Fotografia – Wszystkie prawa zastrzeżone</p>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7dhukTnKwiR8TfkymCBVRN?utm_source=generator&theme=0" width="90%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <script>
+        const diamond = document.getElementById('diamond-image');
+        const modal = document.getElementById('myModal');
+        const span = document.getElementsByClassName("close")[0];
+        let clickCount = 0;
+
+        diamond.addEventListener('click', function() {
+            clickCount++;
+            if (clickCount >= 3) {
+                modal.style.display = "flex";
+                clickCount = 0;
+            }
+        });
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
